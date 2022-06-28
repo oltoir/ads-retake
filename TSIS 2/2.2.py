@@ -24,8 +24,8 @@ def random_list_creator(array, size):
 input_array = []
 arr_size = 500
 random_list_creator(input_array, arr_size)
-
 sort_by_choice(input_array, arr_size)
+
 print("Sorted array is: ")
-for i in range(len(input_array)):
+for i in range(arr_size):
     print(input_array[i], end=" ")

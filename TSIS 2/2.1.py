@@ -35,5 +35,5 @@ arr_size = len(input_array)
 bubble_in_both_sort(input_array, arr_size)
 
 print("Sorted array is: ")
-for i in range(len(input_array)):
+for i in range(arr_size):
     print(input_array[i], end=" ")
