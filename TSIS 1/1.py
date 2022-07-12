@@ -12,15 +12,21 @@ with open('data.txt', 'r') as f:
 # function for binary search to find a name in sorted array
 def binary_search(arr, name):
     low = 0
+    cnt = 0
     high = len(arr) - 1
     while low <= high:
+        cnt += 1
         mid = (low + high) // 2
         if arr[mid] == name:
-            return mid
+            return mid, cnt
         elif arr[mid] < name:
             low = mid + 1
         else:
             high = mid - 1
-    return -1
+    return -1, cnt
 
-print(binary_search(arr, 'Zack'))
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+print(binary_search(nums, 5))
+
+# print(binary_search(arr, 'Zack'))

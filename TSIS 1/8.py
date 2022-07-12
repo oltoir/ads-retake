@@ -26,6 +26,11 @@ def binary_search(arr, number):
 
 
 random_list = []
+for i in range(0, 8):
+    number = random.randint(0, 8)
+    random_list.append(number)
+
+searching_number = 3
 for i in range(0, 64):
     number = random.randint(0, 100)
     random_list.append(number)
